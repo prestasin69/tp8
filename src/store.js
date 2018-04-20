@@ -4,7 +4,38 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    count: 0
+  },
   mutations: {},
-  actions: {}
+  actions: {},
+  modules: {
+    shows: {
+      namespaced:true,
+      state: { 
+        data: {},
+      },
+      getters: {
+        byId() {
+
+        },
+        favorited() {
+          
+        }
+      },
+      actions: {
+        refresh() {
+
+        },
+        favorite() {
+
+        }
+      },
+      mutations: {
+        update() {
+
+        }
+      }
+    }
+  }
 });
